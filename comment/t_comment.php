@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>コメント投稿｜Special Blog</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="../blog.css">
   </head>
   <body>
     <form method="post" action="comment.php">

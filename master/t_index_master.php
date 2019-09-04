@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Special Blog</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="../blog.css">
   </head>
   <body>
     <h1>Special Blog</h1>
@@ -20,8 +20,8 @@
         <?php } ?>
         <p class="comment_link">
           投稿日:<?php echo $post['time'] ?>
-          <a href="comment.php?no=<?php echo $post['no'] ?>">コメント</a>
-          <a href="update_post.php?title=<?php echo $post['title'] ?>">修正</a>
+          <a href="../comment/comment.php?no=<?php echo $post['no'] ?>">コメント</a>
+          <a href="../update/update_post.php?title=<?php echo $post['title'] ?>">修正</a>
         </p>
       </div>
     <?php } ?>

@@ -15,7 +15,7 @@ if(@$_POST['submit']) { // 投稿ボタンが押されたかをチェックし�
     // 記事の書き込みに成功したら index.php に遷移する
     // header 関数はクライアントにデータを送る際のHTTPヘッダーを設定するもの
     // HTTPの機能として 'Location: [URL]' と書くと、ブラウザがヘッダを判断して指定されたURLに遷移する 
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit();
   }
 }

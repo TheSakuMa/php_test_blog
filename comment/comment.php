@@ -12,7 +12,7 @@ if (@$_POST['submit']) {
     $pdo = new PDO("mysql:dbname=blog", "root", "root");
     $st = $pdo->prepare("INSERT INTO comment(post_no, name, content) VALUES (?,?,?)");
     $st->execute(array($post_no, $name, $content));
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit();
   }
 } else { // コメントリンクに付与された親記事番号を受け取って $post_no に代入している

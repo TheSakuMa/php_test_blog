@@ -11,7 +11,7 @@ $content = htmlspecialchars($row['content'], ENT_QUOTES,'UTF-8');
   <head>
     <meta charset="utf-8">
     <title>記事修正｜Special Blog</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="../blog.css">
   </head>
   <body>
     <form method="post" action="update_post2.php">
