@@ -22,6 +22,7 @@
           投稿日:<?php echo $post['time'] ?>
           <a href="../comment/comment.php?no=<?php echo $post['no'] ?>">コメント</a>
           <a href="../update/update_post.php?title=<?php echo $post['title'] ?>">修正</a>
+          <a href="../delete/delete_post.php?title=<?php echo $post['title'] ?>" onclick="return confirm('削除してもよろしいですか？')">削除</a>
         </p>
       </div>
     <?php } ?>
