@@ -1,4 +1,5 @@
 <?php
+require_once '../common.php';
 // 変数の初期化
 $error = $title = $content = "";
 if(@$_POST['submit']) { // 投稿ボタンが押されたかをチェックしている
@@ -10,7 +11,7 @@ if(@$_POST['submit']) { // 投稿ボタンが押されたかをチェックし�
   if (mb_strlen($title) > 80) $error .= 'タイトルが長すぎます。<br>';
   if (!$content) $error .= '本文がありません。<br>';
   if (!$error) { // 今回は管理者のみが記事投稿をできるという前提なので、セキュリティを考慮していないことに注意
-    $pdo = new PDO("mysql:dbname=blog", "root", "root");
+    $pdo = connect();
     $st = $pdo->query("INSERT INTO post(title, content) VALUES('$title', '$content')");
     // 記事の書き込みに成功したら index.php に遷移する
     // header 関数はクライアントにデータを送る際のHTTPヘッダーを設定するもの
